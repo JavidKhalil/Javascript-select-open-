@@ -1,0 +1,25 @@
+<body>
+<select name="" id="mud" onchange="func()">
+	<option value="">Toyota</option>
+	<option value="">Nissan</option>
+	<option value="">Infinity</option>
+	<option value="">Lada</option>
+	<option value="">BMW</option>
+</select>
+
+<script>
+function func() {
+var sel = document.getElementById("mud").selectedIndex; 
+var opt = document.getElementById("mud").options; 
+if (opt[sel].text == "Toyota") window.open("https://www.toyota.com", "", 
+"top=250,left=250,width=200,height=100");  
+else if (opt[sel].text == "Nissan") window.open("https://https://www.nissan.co.uk", "", 
+"top=250,left=250,width=200,height=100");   
+else if (opt[sel].text == "Infinity") window.open("https://https://www.infinitiusa.com", 
+"", "top=250,left=250,width=200,height=100");  
+else if (opt[sel].text == "BMW") window.open("https://https://www.caranddriver.com/bmw", 
+"", "top=250,left=250,width=200,height=100"); 
+else window.open("www://www.lada.ru", "", "top=250,left=250,width=200,height=100"); 
+}
+</script>
+</body>
